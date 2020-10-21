@@ -19,8 +19,17 @@
 
     //JSX내부에 변수값 넣기
     const tit = "자바스크립트"
+    const name = "리액트"
+    const myStyle = {
+      width: 500,
+      margin: '0 auto',
+      padding: '20px 30px',
+      textAlign: 'center',
+      backgroundColor: 'yellow',
+      border: '1px solid black'
+    }
 
-    const $h1 = <h1 tit={tit}>Hello React~!</h1>//JSX
+    const $h1 = <h1 style={myStyle} tit={tit}>Hello, {name}~!</h1>//JSX
 
     ReactDOM.render($h1, $root)
   </script>
