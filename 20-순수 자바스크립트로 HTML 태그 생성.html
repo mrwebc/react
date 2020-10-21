@@ -13,7 +13,12 @@
   <hr>
 
   <script>
+    const $h1 = document.createElement('h1');
+    const $text = document.createTextNode('안녕, 자바스크립트');
 
+    $h1.appendChild($text);
+
+    document.body.appendChild($h1);
   </script>
 
 </body>
