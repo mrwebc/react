@@ -19,11 +19,26 @@
 
 <body>
   <div id="root">
-    <h1>17:24:30</h1>
+    <!-- <h1>17:24:30</h1> -->
   </div>
 
   <script>
+    const $root = document.querySelector('#root')
 
+    setInterval(function () {
+      const now = new Date()
+
+      const hh = now.getHours()
+      const mm = now.getMinutes()
+      const ss = now.getSeconds()
+
+      $root.innerHTML = `
+        <h1>
+          ${hh} : ${mm} : ${ss}
+        </h1>
+      `
+
+    }, 1000);
   </script>
 </body>
 
